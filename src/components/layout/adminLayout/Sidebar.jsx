@@ -36,7 +36,7 @@ export default function Sidebar({ isOpen, onClose, user }) {
       {/* Mobile overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black bg-opacity-40 z-30 md:hidden"
+          className="fixed inset-0 bg-tansparent backdrop-blur-md z-30 md:hidden"
           onClick={onClose}
         />
       )}

@@ -32,13 +32,13 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="flex font-display items-center justify-center min-h-screen bg-gray-100 px-4">
+    <div className="flex font-display items-center justify-center min-h-screen bg-gray-100 md:px-4">
       <ToastContainer />
       <div className="flex flex-col md:flex-row border-px border-gray-100 bg-white rounded-2xl shadow-2xl w-[85%] overflow-hidden max-w-5xl min-h-[80%]">
         {/* Left Form */}
-        <div className="md:w-1/2 p-12 flex flex-col justify-center">
-          <h1 className="text-4xl font-bold mb-4 text-gray-900">Welcome Back</h1>
-          <p className="text-gray-500 mb-8">Sign in to your account</p>
+        <div className="md:w-1/2 py-12 px-10 md:p-12 flex flex-col justify-center">
+          <h1 className="text-2xl md:text-4xl font-bold mb-4 text-gray-900">Welcome Back</h1>
+          <p className="text-gray-500  mb-8">Sign in to your account</p>
 
           <form onSubmit={handleSubmit} className="space-y-6 ">
             <div>
@@ -60,7 +60,7 @@ export default function LoginPage() {
                   type={showPassword ? 'text' : 'password'}
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  placeholder="Enter your password"
+                  placeholder="Password.."
                   className="w-full px-5 py-4 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-400"
                   required
                 />

@@ -28,7 +28,7 @@ export default function TopBar({ user, onHamburgerClick }) {
       </motion.button>
 
       {/* Title */}
-      <div className="flex-1 text-center md:text-left">
+      <div className="flex-1 hidden md:block text-center md:text-left">
         <h1
           className={`text-xl md:text-2xl font-semibold transition-colors duration-500
             ${darkMode ? "text-cyan-400" : "text-gray-800"}`}
